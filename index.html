@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="showInvitation()">Voir l'invitation</button>
+    <div class="modal" id="modal">
+        Salut ! 
+        <br>
+        Mon nom c'est Cephas, 
+        <br>
+        <hr>
+        je voulais juste vous rappeler appropos de nos seances de rattrapage pour cette semaine:
+        les jours sont:
+        <ul>
+            <li>Aujourd'hui Mardi la nuit</li>
+            <li>vendredi la nuit</li>
+        </ul> 
+    </div>
+
+    <script>
+        function showInvitation() {
+            const modal = document.getElementById('modal');
+            modal.style.display = (modal.style.display === 'flex' ? 'none': 'flex');
+        }
+    </script>
+</body>
+</html>
